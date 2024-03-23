@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,node,nextjs,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,node,nextjs,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/node,nextjs,windows,visualstudiocode,redis
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,nextjs,windows,visualstudiocode,redis
 
 ### NextJS ###
 # dependencies
@@ -172,6 +172,11 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### Redis ###
+# Ignore redis binary dump (dump.rdb) files
+
+*.rdb
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -217,4 +222,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,node,nextjs,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/node,nextjs,windows,visualstudiocode,redis
