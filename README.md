@@ -13,6 +13,7 @@ This project was developed with the following technologies:
 - [Docker](https://www.docker.com)
 - [PostgreSQL](https://www.postgresql.org)
 - [Redis](https://redis.io)
+- [Swagger](https://redis.io)
 
 ## How To Use
 
@@ -43,6 +44,8 @@ $ pnpm run setup
 
 pnpm run dev
 ```
+
+Open [http://localhost:3333/docs/](http://localhost:3333/docs/) with your browser to see the documentation.
 
 ### Features
 
