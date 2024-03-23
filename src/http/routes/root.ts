@@ -4,10 +4,12 @@ import { FastifyInstance } from 'fastify';
 import { redis } from '../../databases/redis';
 import { sql } from '../../databases/postgres';
 
+import { root_doc } from '../../swagger/root.swagger';
+
 // Route to show all the links into url_shortener table.
 
 export async function root (fastify: FastifyInstance) {
-	fastify.get('/:code', async (request, reply) => {
+	fastify.get('/:code', { schema: root_doc.schema }, async (request, reply) => {
 		const { code } = z.object({
 			code: z.string().min(3)
 		}).parse(request.params);

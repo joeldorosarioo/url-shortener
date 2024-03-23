@@ -3,7 +3,7 @@ import { sql } from './databases/postgres';
 // SQL code to create url_shortener table into Postgres database.
 
 (async () => {
-  await sql`
+	await sql`
 		CREATE TABLE IF NOT EXISTS url_shortener (
 			id SERIAL PRIMARY KEY,
 			code TEXT UNIQUE,
